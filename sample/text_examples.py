@@ -1,7 +1,7 @@
 
 
 class TextExamples(object):
-
+    @staticmethod
     def quitarSigno(texto):
         if type(texto) is not str :
             raise TypeError
@@ -10,7 +10,7 @@ class TextExamples(object):
 
     #def listaDePalabras(texto):
        # return quitarSigno(texto).split()
-
+    @staticmethod
     def contar(lista):
         frecuencia = []
         for w in lista:

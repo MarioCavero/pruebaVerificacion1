@@ -1,5 +1,5 @@
 from django.test import TestCase
-from Formulario.models import Data
+from Veri_23_03.practicaVerificacion.practicaPruebaVeri.Formulario.models import Data
 import datetime
 from datetime import tzinfo
 class DataTests(TestCase):
@@ -22,3 +22,7 @@ class DataTests(TestCase):
     def test_Contiene_Fecha(self):
         nuevo = Data.objects.get(palabra="nuevo")
         self.assertEqual((nuevo.fecha).ctime(), 'Wed Jun  6 00:00:00 2018' )
+
+    def test_Contiene_Fecha(self):
+        nuevo = Data.objects.get(palabra="nuevo")
+        self.assertEqual((nuevo.fecha).ctime(), 'Wed Jun  6 00:00:00 2012' )

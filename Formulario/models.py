@@ -1,5 +1,7 @@
 from django.db import models
 from datetime import date
+
+
 class Data(models.Model):
 
     palabra = models.CharField(max_length=200)

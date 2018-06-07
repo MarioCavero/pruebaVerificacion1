@@ -1,5 +1,5 @@
 import unittest
-from sample.strings_example import StringsExamples
+from .strings_example import StringsExamples
 
 
 class TestStringsExamples(unittest.TestCase):
@@ -34,7 +34,7 @@ class TestStringsExamples(unittest.TestCase):
         str1 = "Espana"
         str2 = "Belgica"
         str3="Holanda"
-        result = StringsExamples.concat_strings(str1, str2,str3)
+        result = StringsExamples.concat_3strings(str1, str2,str3)
         assert result == "EspanaBelgicaHolanda"
 
     def test_concat_four_strings(self):
@@ -42,7 +42,7 @@ class TestStringsExamples(unittest.TestCase):
         str2 = "Belgica"
         str3="Holanda"
         str4= "Alemania"
-        result = StringsExamples.concat_strings(str1, str2,str3,str4)
+        result = StringsExamples.concat_4strings(str1, str2,str3,str4)
         assert result == "EspanaBelgicaHolandaAlemania"
 
     def test_concat_five_strings(self):
@@ -51,7 +51,7 @@ class TestStringsExamples(unittest.TestCase):
         str3 = "Holanda"
         str4 = "Alemania"
         str5= "Portugal"
-        result = StringsExamples.concat_strings(str1, str2, str3, str4,str5)
+        result = StringsExamples.concat_5strings(str1, str2, str3, str4,str5)
         assert result == "EspanaBelgicaHolandaAlemaniaPortugal"
 
     def test_concat_six_strings(self):
@@ -61,7 +61,7 @@ class TestStringsExamples(unittest.TestCase):
         str4 = "Alemania"
         str5= "Portugal"
         str6= "Francia"
-        result = StringsExamples.concat_strings(str1, str2, str3, str4,str5,str6)
+        result = StringsExamples.concat_6strings(str1, str2, str3, str4,str5,str6)
         assert result == "EspanaBelgicaHolandaAlemaniaPortugalFrancia"
 
     def test_concat_seven_strings(self):
@@ -72,7 +72,7 @@ class TestStringsExamples(unittest.TestCase):
         str5 = "Portugal"
         str6 = "Francia"
         str7 = "Italia"
-        result = StringsExamples.concat_strings(str1, str2, str3, str4, str5, str6,str7)
+        result = StringsExamples.concat_7strings(str1, str2, str3, str4, str5, str6,str7)
         assert result == "EspanaBelgicaHolandaAlemaniaPortugalFranciaItalia"
 
     def test_concat_eight_strings(self):
@@ -84,7 +84,7 @@ class TestStringsExamples(unittest.TestCase):
         str6 = "Francia"
         str7 = "Italia"
         str8= "Grecia"
-        result = StringsExamples.concat_strings(str1, str2, str3, str4, str5, str6,str7,str8)
+        result = StringsExamples.concat_8strings(str1, str2, str3, str4, str5, str6,str7,str8)
         assert result == "EspanaBelgicaHolandaAlemaniaPortugalFranciaItaliaGrecia"
 
     def test_concat_nine_strings(self):
@@ -97,7 +97,7 @@ class TestStringsExamples(unittest.TestCase):
         str7 = "Italia"
         str8= "Grecia"
         str9= "Serbia"
-        result = StringsExamples.concat_strings(str1, str2, str3, str4, str5, str6,str7,str8,str9)
+        result = StringsExamples.concat_9strings(str1, str2, str3, str4, str5, str6,str7,str8,str9)
         assert result == "EspanaBelgicaHolandaAlemaniaPortugalFranciaItaliaGreciaSerbia"
 
     def test_concat_ten_strings(self):
@@ -111,7 +111,7 @@ class TestStringsExamples(unittest.TestCase):
         str8 = "Grecia"
         str9 = "Serbia"
         str10 = "Rumania"
-        result = StringsExamples.concat_strings(str1, str2, str3, str4, str5, str6, str7, str8, str9,str10)
+        result = StringsExamples.concat_10strings(str1, str2, str3, str4, str5, str6, str7, str8, str9,str10)
         assert result == "EspanaBelgicaHolandaAlemaniaPortugalFranciaItaliaGreciaSerbiaRumania"
 
     def test_concat_eleven_strings(self):
@@ -126,7 +126,7 @@ class TestStringsExamples(unittest.TestCase):
         str9 = "Serbia"
         str10 = "Rumania"
         str11 = "Lituania"
-        self.assertRaises(TypeError, StringsExamples.concat_strings,str1, str2, str3, str4, str5, str6, str7, str8, str9,str10,str11)
+        self.assertRaises(TypeError, StringsExamples.concat_11strings,str1, str2, str3, str4, str5, str6, str7, str8, str9,str10,str11)
 
     def test_concat_string1_1(self):
         str1="a"

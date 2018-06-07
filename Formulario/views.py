@@ -1,8 +1,10 @@
 from django.shortcuts import render
-from Formulario.models import Data
+from .models import Data
+
 from sample import text_examples
 import urllib.request
 from bs4 import BeautifulSoup
+
 
 def vistaFormulario(request):
 
